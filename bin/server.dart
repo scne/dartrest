@@ -34,9 +34,6 @@ void main() {
      
      // Serve the view called index as default 
      webApp.use("/", (req, model) => "index");
-     
-     // Start serving force with a randomPortFallback 
-     webApp.start(fallback: randomPortFallback);
   });
   
  
