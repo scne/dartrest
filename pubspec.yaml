@@ -13,6 +13,5 @@ dev_dependencies:
   mock: ">=0.11.0+2 <0.12.0"
 transformers:
 - angular:
-    dart_sdk: "/usr/lib/dart"
     html_files:
       - web/lib/component/custom.html
