@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html ng-app>
+  <head>
+    <script src="packages/web_components/platform.js"></script>
+    <script src="packages/web_components/dart_support.js"></script>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+  </head>
+ 
+  <body>   
+    
+    <h3>Hello {{name}}!</h3>
+      Name: <input type="text" ng-model="name">
+    
+    <custom ng-cloak></custom>
+    <script type="application/dart" src="main.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
