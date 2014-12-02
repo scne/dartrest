@@ -3,3 +3,10 @@ runtime: custom
 vm: true
 api_version: 1
 threadsafe: true
+
+#env_variables:
+ # DBG_ENABLE: 'true'
+
+# disable health-checking because this is so annoying during debugging
+#vm_health_check:
+  #enable_health_check: False
