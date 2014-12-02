@@ -6,6 +6,7 @@ import 'dart:math';
 import 'package:logging/logging.dart';
 import 'package:forcemvc/force_mvc.dart';
 import 'package:wired/wired.dart';
+import 'package:mustache4dart/mustache4dart.dart';
 import 'package:appengine/appengine.dart';
 
 part 'controllers/count_controller.dart';
@@ -31,6 +32,11 @@ void main() {
      
      // Setup session strategy
      webApp.strategy = new SessionStrategy();
+     
+     if (webApp.viewRender is MustacheRender) {
+              MustacheRender mustacheRender = webApp.viewRender;
+              mustacheRender.delimiter = new Delimiter('[[', ']]');
+          }
      
      // Serve the view called index as default 
      webApp.use("/", (req, model) => "index");
