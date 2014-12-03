@@ -7,7 +7,7 @@ import 'package:angular/angular.dart';
 
 @Injectable()
 class EchoService {
-  String _serverUrl = 'http://127.0.0.1:8080/json';
+  String _serverUrl = '/json';
 
   Future _loaded;
 
