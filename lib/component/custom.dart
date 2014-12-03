@@ -23,6 +23,7 @@ class CustomComponent {
   final EchoService echoService;
   
   String echo;
+  String name;
 
   // Determine the initial load state of the app
   String message = LOADING_MESSAGE;

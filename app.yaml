@@ -1,3 +1,4 @@
+application: clear-wind-782
 version: 1
 runtime: custom
 vm: true
@@ -10,3 +11,5 @@ threadsafe: true
 # disable health-checking because this is so annoying during debugging
 #vm_health_check:
   #enable_health_check: False
+env_variables:
+  DART_VM_OPTIONS: '--enable-async'
